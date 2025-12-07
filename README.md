@@ -36,7 +36,7 @@ Kanban-Board/
 │
 ├── index.html         # UI layout
 ├── style.css          # Styling + responsive layout + animations
-└── script.js          # Application logic and drag-drop handlers
+└── main.js          # Application logic and drag-drop handlers
 
 ```
 
