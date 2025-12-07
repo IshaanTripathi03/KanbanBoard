@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scaler Kanban Board</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form id="task-form">
+      <div class="form-wrapper">
+        <div class="input-container">
+          <input autocomplete="off" id="task-input" type="text" placeholder="Enter a new task..."/>
+          <button type="submit" id="Add_task">Add task</button>
+        </div>
+        <div class="app-btns">
+            <button class="bookmarkBtn" type="button" id="save">
+              <span class="IconContainer">
+                <svg viewBox="0 0 384 512" height="0.9em" class="icon">
+                  <path
+                    d="M0 48V487.7C0 501.1 10.9 512 24.3 512c5 0 9.9-1.5 14-4.4L192 400 345.7 507.6c4.1 2.9 9 4.4 14 4.4c13.4 0 24.3-10.9 24.3-24.3V48c0-26.5-21.5-48-48-48H48C21.5 0 0 21.5 0 48z"
+                  ></path>
+                </svg>
+              </span>
+              <p class="text">Save</p>
+            </button>
+            
+          <button type="button" id="sync">Sync Last Save</button>
+        </div>
+      </div>
+    </form>
+    <section class="tasks-wrapper">
+      <div class="tasks-lane" id="todo-lane">
+        <h3>To Do</h3>
+      </div>
+      <div class="tasks-lane" id="doing-lane">
+        <h3>Doing</h3>
+      </div>
+      <div class="tasks-lane" id="done-lane">
+        <h3>Done</h3>
+      </div>
+    </section>
+    <script src="./main.js"></script>
+  </body>
+</html>
